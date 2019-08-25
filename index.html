@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+  </head>
+
+  <body>
+<div style="height: 200px;width: 50%; margin: auto;">
+  <form id="target" action="">
+    Patient First Name<input type="text" id="patient-first">
+    Patient Last Name<input type="text" id="patient-last">
+    <input type="submit" value="Crear">
+  </form>
+  <div id="result" style="display: none;">
+    Creado Paciente: <span id="name"></span>
+    Con ID: <span id="id"></span>
+    Url: <a id="url"></a>
+  </div>
+</div>
+<div style="height: 200px;width: 50%; margin: auto;">
+  <table id="myTable" class="display">
+      <thead>
+          <tr>
+              <th>ID</th>
+              <th>Patient</th>
+              <th>Link</th>
+              <th>Actions</th>
+          </tr>
+      </thead>
+      <tbody>
+      </tbody>
+      <tfoot>
+          <tr>
+              <th>ID</th>
+              <th>Patient</th>
+              <th>Link</th>
+              <th>Actions</th>
+          </tr>
+      </tfoot>
+  </table>
+</div>
+  </body>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js'></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+    <script src='jqFhir.js'></script>
+    <script src='main.js'></script>
+
+    <script>
+
+    </script>
+
+
+</html>
